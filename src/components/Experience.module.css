@@ -1,0 +1,66 @@
+.card {
+  background: #0c0c0c;
+  border: 0.5px solid #1d1d1d;
+  border-left: 2px solid transparent;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #efefef;
+}
+
+.meta {
+  font-size: 13px;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.metaSub {
+  color: #444;
+}
+
+.period {
+  font-size: 11px;
+  color: #444;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.point {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.65;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 7px;
+}

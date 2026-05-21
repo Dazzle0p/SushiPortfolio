@@ -1,0 +1,133 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: #0f0f0f;
+  border: 0.5px solid #1d1d1d;
+  border-left: 2px solid transparent;
+  border-radius: 14px;
+  padding: 26px;
+  transition: border-color 0.25s, transform 0.25s;
+  position: relative;
+}
+
+.card:hover {
+  border-color: #2a2a2a;
+  transform: translateY(-3px);
+}
+
+.featured {
+  grid-column: 1 / -1;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 0.5px solid transparent;
+  letter-spacing: 0.06em;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 0.5px solid transparent;
+  letter-spacing: 0.04em;
+}
+
+.period {
+  font-size: 11px;
+  color: #444;
+}
+
+.name {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.highlight {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-bottom: 16px;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: #161616;
+  border: 0.5px solid #252525;
+  color: #999;
+  margin: 3px 3px 0 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.03em;
+}
+
+.btnPrimary:hover { opacity: 0.85; }
+
+.btnGhost {
+  background: transparent;
+  color: #666;
+  border: 0.5px solid #252525;
+}
+.btnGhost:hover {
+  border-color: #444;
+  color: #aaa;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .featured { grid-column: auto; }
+}

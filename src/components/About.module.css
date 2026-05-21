@@ -1,0 +1,216 @@
+.section {
+  min-height: 100vh;
+  padding: 120px 24px 80px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 229, 160, 0.05);
+  border: 0.5px solid rgba(0, 229, 160, 0.2);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: #00e5a0;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.pillDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00e5a0;
+  box-shadow: 0 0 6px #00e5a0;
+  flex-shrink: 0;
+}
+
+.name {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(42px, 9vw, 74px);
+  font-weight: 800;
+  line-height: 1;
+  color: #efefef;
+  margin-bottom: 18px;
+}
+
+.nameGreen {
+  color: #00e5a0;
+}
+
+.role {
+  font-size: clamp(16px, 3vw, 22px);
+  color: #444;
+  font-weight: 300;
+  margin-bottom: 44px;
+  min-height: 1.5em;
+}
+
+.roleText {
+  color: #999;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background: #00e5a0;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.bringGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.bringCard {
+  background: #0f0f0f;
+  border: 0.5px solid #1d1d1d;
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.2s;
+}
+
+.bringCard:hover {
+  border-color: rgba(0, 229, 160, 0.15);
+}
+
+.bringIcon {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bringTitle {
+  font-family: "Syne", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #efefef;
+  margin-bottom: 6px;
+}
+
+.bringDesc {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .section {
+    min-height: auto;
+    padding: 80px 16px 50px;
+  }
+
+  .bringGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .bringCard {
+    padding: 14px;
+  }
+
+  .bringIcon {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .bringTitle {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .bringDesc {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .ctas {
+    margin-bottom: 28px;
+  }
+}
+
+.ctas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background: #00e5a0;
+  color: #080808;
+}
+.btnPrimary:hover {
+  background: #00ffb3;
+}
+
+.btnGhost {
+  background: transparent;
+  color: #666;
+  border: 0.5px solid #252525;
+}
+.btnGhost:hover {
+  border-color: #00e5a0;
+  color: #00e5a0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.statCard {
+  background: #0f0f0f;
+  border: 0.5px solid #1a1a1a;
+  border-radius: 10px;
+  padding: 18px 22px;
+  text-align: center;
+}
+
+.statNum {
+  font-family: "Syne", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00e5a0;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: #555;
+  margin-top: 4px;
+  letter-spacing: 0.05em;
+}

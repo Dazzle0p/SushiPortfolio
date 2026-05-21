@@ -1,0 +1,41 @@
+.section {
+  min-height: 100vh;
+  padding: 110px 24px 80px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #00e5a0;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(26px, 5vw, 40px);
+  font-weight: 700;
+  color: #efefef;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+
+@media (max-width: 640px) {
+  .section {
+    min-height: auto;
+    padding: 80px 16px 50px;
+  }
+
+  .label,
+  .title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .title {
+    margin-bottom: 32px;
+  }
+}
