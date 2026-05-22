@@ -8,10 +8,13 @@
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 0.5px solid #141414;
+  overflow-x: hidden;
 }
 
 .inner {
+  width: 100%;
   max-width: 960px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 0 24px;
   height: 58px;
@@ -73,8 +76,16 @@
 }
 
 .links {
-  display: flex;
+  display: none;
   gap: 28px;
+}
+
+@media (min-width: 641px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
 }
 
 .link {
@@ -119,6 +130,8 @@
     border: 0.5px solid #141414;
     border-radius: 16px;
     box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+    width: auto;
+    max-width: calc(100% - 32px);
   }
 
   .links.open {
